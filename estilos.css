@@ -15,14 +15,11 @@ div#encabezado{
 	padding: 25px 60px;
 	display: flex;
 }
-/* para el logo le asignamos un alto de 100px y un ancho de 100px y para poder lograr que nuestro logo se vea de manera circular
-agregamos la imagen en el fondo de div y por ultimos indicamos cuanta curvatura es la que vamos a querer que en este caso fueron 50px */
+/* para el logo le asignamos un alto de 100px y un ancho de 100px, ya que en el html determinamos el tamaño de la 
+imagen que es exactamente la misma*/
 div#logo{
-	background-image: url(img/logo.jpg);
 	width: 100px;
 	height: 100px;
-	-moz-border-radius: 50px;  	
-	-webkit-border-radius: 50px;
 }
 /* es este div vamos a meter solo el titulo o bueno el nombre del restaurnte en donde como fondo le asignamos un margen 
 del lado izquierdo del div para que no se vea tan pegado al logo y le asignamos los valores de 150px de 
