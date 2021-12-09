@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--aqui se le asigna el el titulo de la pagina sera coffe & cake -->
+		<title>COFFE & CAKE</title>
+		<!--es esta parte se le indica el "estilo" de la pagina lo tomara del archivo css estilos -->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<!-- se crea un div llamado contenedor en cual sera en donde se agregue todos los componentes que se 
+		pondran en la pagina -->
+		<div id="contenedor">	
+			<!--en el div encabezado se tendran todos los componentes que se utilicen para el encabezado
+				de la pagina-->
+			<div id="encabezado">
+				<!--en el div logo se pondra el logo del restaurante, el el div titulo el nombre del restaurante
+					y en el div menu el menu para poder navegar entre las diferentes paginas-->
+				<div id="logo"></div>
+				<div id="titulo"><h1>COFFE & CAKE</h1></div>
+				<div id="menu">
+					<!-- para el menu se utiliza una lista a la cual llamaremos horizontal en donde ponemos
+						cada pagina se tiene (inicio,menu,galeria y combos, para que no salgan subrayados
+						las letras se le declara que el texto no tenga ninguna decoracion y se le asigna una referencia
+						para que cada que apretes el nombre te lleve o te redireccione a esa pagina-->
+					<ul id="horizontal">
+    					<li><a id="h2" href="Inicio.html"style="text-decoration: none;">INICIO</a></li>
+   						<li><a id="h2" href="Menu.html"style="text-decoration: none;">MENU</a></li>
+    					<li><a id="h2" href="Galeria.html" style="text-decoration: none;">GALERIA</a></li>
+    					<li><a id="h2" href="Promociones.html" style="text-decoration: none;">COMBOS</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--con esto terminamos la parte del encabezado y empezamos a crear el contenido de la pagina-->
+
+			<!-- para nuestro contenido vamos a crear un div llamado contenido en donde pondremos todos los 
+			componentes que pertenezcan al contenido-->
+			<div id= "contenido">
+				<!--para el titulo del contenido creamos un div y escribimos en nombre de la pagina, en este caso es 
+					el inicio-->
+				<div id="contenedorTitulo">
+					<h3>INICIO</h3>
+				</div>
+
+				<!--se crea un contenedor inicio en donde se tendran todos los atributos que se pongan en esta pagina-->
+				<div id="inicio">
+					<!--En este caso se puso como un subtitulo en nombre del restaurante-->
+					<h4>COFFE & CAKE</h4>
+					<!--se creo un div en donde se pondran las imagenes y la expliacion de la pagina-->
+					<div id="imagenInicio">
+						<!--En ente punto empieza el codigo de las imagenes que se desplazan, en donde se tiene un 
+							contenedor que sera el que tenga las imagenes, asi como el navegador para moverte entre ellas-->
+						<div class="slidershow middle">
+							<div id="slides">
+								<!--se crean input de tipo radio para que sean nuestras opciones y nos ayuden a poder elegir
+									entre cual de las imagenes queremos ver-->
+								<input type="radio" name="r" id="r1">
+								<input type="radio" name="r" id="r2">
+								<input type="radio" name="r" id="r3">
+								<input type="radio" name="r" id="r4">
+								<!--es este caso se agregan las imagenes, cada una en un div-->
+								<div class="img s1">
+									<img id="inicio" src="img/rest2.jpg">	
+								</div>
+								<div class="img">
+									<img id="inicio" src="img/domicilio.jpg">	
+								</div>
+								<div class="img">
+									<img id="inicio" src="img/rest1.jpg">	
+								</div>
+								<div class="img">
+									<img id="inicio" src="img/combo.jpg">	
+								</div>
+							</div>
+							<!--el contenedor navegation sera el que nos ayude a crear nuestro navegador para indicar cual es la imagen que queremos ver, en este caso son label en donde se relacionan con los input y asi poder hacer la accion de que solo se eliga una opcion y se pueda cambiar las imagenes-->
+							<div id="navigation">
+								<label for="r1" class="bar"></label>
+								<label for="r2" class="bar"></label>
+								<label for="r3" class="bar"></label>
+								<label for="r4" class="bar"></label>
+							</div>
+						</div>
+					</div>
+					<!--Es este div se encontrara un poco sobre que contiene cada seccion de la pagina, como lo que se encontrar en el 
+						menu, en la galeria, en la seccion de combos y en la pagina de inicio-->
+					<div id="ini1"><h4>DIFERENTES SECCIONES DE NUESTRA PAGINA</h4><h5>INICIO<br>En esta seccion encontraras anuncios importantes sobre el restaurante asi como los horarios y algunas imagenes sobre el local </h5><h5>MENU<br>En esta seccion encontraras nuestro menu con todos los postres que vendemos asi como una breve descripcion de cada uno de ellos,el precio y una imagen ilustrativa</h5><h5>GALERIA<br>En esta seccion encontraras imagenes sobre nuestro restaurante y los postres que vendemos, tambien encontraras una seccion sobre cupones</h5><h5>COMBOS<br>En esta nueva seccion encontraras los diferentes tipos de combos que tenemos para ti, asi como el precio y una imagen ilustrativa</h5>
+					</div>
+					<!--En este div que se encontrara en la parte inferior de la pagina se tendran los horarios del restaurante-->
+					<div id="ini2"><h4>VEN A VISITARNOS!</h4><h5>CONOCE NUESTROS HORARIOS</h5> 
+						<div id="horario"> <h5>DE LUNES A VIERNES DE: 09:00 Hrs A 14:00 Hrs Y 14:30 Hrs A 19:30 Hrs</h5>
+							 <h5>SABADOS Y DOMINGOS DE 10:00 Hrs A 15:00 Hrs Y 16:00 Hrs A 21:00 Hrs</h5>
+						</div>
+					</div>
+				</div>
+				<!--con esto se termina todo lo de se tiene en el contenido de la pagina y se empieza a crear el pie de pagina 
+					por lo que se crea un div en donde se tendra todo lo correspondiente a el pie de pagina-->
+			<div id="piePagina">
+				<!--se crea un div contacto en donde se pondra pondra el nombre y tambien se indica que es el contacto-->
+				<div id="contacto">
+					<h4>CONTACTO</h4>
+					<h5>Susana Herandi</h5>
+				</div>
+				<!--se crea un div materia en donde se pone el nombre de la materia asi como el grupo y tambien 
+					se indica que es la materia-->
+				<div id="materia">
+					<h4>MATERIA</h4>
+					<h5>Programacion Web 1507 </h5>
+				</div>
+				<!--se crea un div telefono en donde se pone el telefono del restaurante y se indica que es el 
+					telefono-->
+				<div id="telefono">
+					<h4>TELEFONO</h4>
+					<h5>537768254</h5>
+				</div>
+				<!--se crea un div redes en donde se pondran los logos de las redes y se indica que si se apreta
+				ya sea en el div de instagram o en el div de facebook te redirecciona al enlace de cada uno de ellos-->
+				<div id="redes">
+					<a href="https://www.instagram.com/">
+						<div id="instagram"><img src="img/instagram.png"></div>
+					</a>
+					<a href="https://es-la.facebook.com/">
+						<div id="facebook"><img src="img/facebook.png"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

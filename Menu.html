@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--aqui se le asigna el el titulo de la pagina sera coffe & cake -->
+		<title>COFFE & CAKE</title>
+		<!--es esta parte se le indica el "estilo" de la pagina lo tomara del archivo css estilos -->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<!-- se crea un div llamado contenedor en cual sera en donde se agregue todos los componentes que se 
+		pondran en la pagina -->
+		<div id="contenedor">	
+			<!--en el div encabezado se tendran todos los componentes que se utilicen para el encabezado
+				de la pagina-->
+			<div id="encabezado">
+				<!--en el div logo se pondra el logo del restaurante, el el div titulo el nombre del restaurante
+					y en el div menu el menu para poder navegar entre las diferentes paginas-->
+				<div id="logo"></div>
+				<div id="titulo"><h1>COFFE & CAKE</h1></div>
+				<div id="menu">
+					<!-- para el menu se utiliza una lista a la cual llamaremos horizontal en donde ponemos
+						cada pagina se tiene (inicio,menu,galeria y combos, para que no salgan subrayados
+						las letras se le declara que el texto no tenga ninguna decoracion y se le asigna una referencia
+						para que cada que apretes el nombre te lleve o te redireccione a esa pagina-->
+					<ul id="horizontal">
+    					<li><a id="h2" href="Inicio.html"style="text-decoration: none;">INICIO</a></li>
+   						<li><a id="h2" href="Menu.html"style="text-decoration: none;">MENU</a></li>
+    					<li><a id="h2" href="Galeria.html" style="text-decoration: none;">GALERIA</a></li>
+    					<li><a id="h2" href="Promociones.html" style="text-decoration: none;">COMBOS</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--con esto terminamos la parte del encabezado y empezamos a crear el contenido de la pagina-->
+
+			<!-- para nuestro contenido vamos a crear un div llamado contenido en donde pondremos todos los 
+			componentes que pertenezcan al contenido-->
+			<div id= "contenido">
+				<!--para el titulo del contenido creamos un div y escribimos en nombre de la pagina, en este caso es 
+					el menu-->
+				<div id="contenedorTitulo">
+					<h3>MENU</h3>
+				</div>
+				<!--se crea un div para poner todo el contenido sobre el menu-->
+				<div id="productos">
+					<!-- se crean varias tablas dependiendo del tipo de producto que es -->
+					<table> 
+						<!-- se pone como titulo de la tabla bebidas y se agregan en cada una de las filas los productos 
+							que pertencen a las bebidas, en cada columna se tendra el nombre de la bebida, alguna descripcion,
+							el precio del mismo y una imagen ilustrativa del producto-->
+						<caption>BEBIDAS</caption>
+						<tr>
+							<th>CAFÉ AMERICANO</th>
+							<td>Café Americano de 450 ml</td>
+							<th>$30.00</th>
+							<th><img src="img/cafeAmericano.jpg"></th>
+						</tr>
+						<tr>
+							<th>CAPUCHINO</th>
+							<td> Café de 400 ml</td>
+							<th>$30.00</th>
+							<th><img src="img/capuchino.jpg"></th>
+						</tr>
+						<tr>
+							<th>CHOCOLATE</th>
+							<td>Chocolate de 450 ml</td>
+							<th>$30.00</th>
+							<th><img src="img/chocolate.jpg"></th>
+						</tr>
+						<tr>
+							<th>CHAI</th>
+							<td>Chai de 400 ml</td>
+							<th>$30.00</th>
+							<th><img src="img/chai.jpg"></th>
+						</tr>
+						<tr>
+							<th>FRAPPÉ</th>
+							<td>Frappe de cafe de 500ml</td>
+							<th>$50.00</th>
+							<th><img src="img/frappe.jpg"></th>
+						</tr>
+						<tr>
+							<th>MALTEADA DE VAINILLA</th>
+							<td>Malteada sabor vainilla de 500ml</td>
+							<th>$50.00</th>
+							<th><img src="img/malteadaVainilla.jpg"></th>
+						</tr>
+						<tr>
+							<th>MALTEADA DE CHOCOLATE</th>
+							<td>Malteada sabor chocolate de 500ml</td>
+							<th>$50.00</th>
+							<th><img src="img/malteadaChoco.jpg"></th>
+						</tr>
+						<tr>
+							<th>MALTEADA DE FRESA</th>
+							<td>Malteada sabor fresa de 500ml</td>
+							<th>$50.00</th>
+							<th><img src="img/malteadaFresa.jpg"></th>
+						</tr>
+					</table>
+					<!-- agregue un dir para que existiera una separacion entre las dos tablas y no se 
+						vea tan junto-->
+					<dir></dir>
+					<!--al terminar con las bebidas cerramos la tabla y volvemos a abrir otra, en donde ahora ponemos como
+						titulo pasteles y de igual forma agregamos este tipo deproductos en cada una de las filas y en ellas
+						se incluye en nombre del pastel, una descripcion, el precio y una imagen ilustrativa del producto-->
+					<table>
+						<caption>PASTELES</caption>
+						<tr>
+							<th>PASTEL DE CHOCOLATE</th>
+							<td>Pastel elaborado con bizcocho de chocolate, relleno de mousse de chocolate amargo,  chocolate de leche y chocolate blanco, decorado con fresa y granillo de chocolate</td>
+							<th>ENTERO $220.00
+								REBANADA $24.00</th>
+							<th><img src="img/pastelChoco.jpg"></th>
+						</tr>
+						<tr>
+							<th>PASTEL DE TRES LECHES</th>
+							<td>Pastel elaborado con bizcocho de vainilla, bañado con tres leches, decorado con crema pastelera y frutos (fresas y duraznos) </td>
+							<th>ENTERO $220.00
+								REBANADA $24.00</th>
+							<th><img src="img/pastelTresleches.jpg"></th>
+						</tr>
+						<tr>
+							<th>PASTEL DE CAJETA CON NUEZ</th>
+							<td>Pastel con bizcocho de vainilla y trozos de nuez, bañado con tres leches y cajeta, decorado con nueces y 
+							betun de cajeta</td>
+							<th>ENTERO $230.00
+								REBANADA $25.00</th>
+							<th><img src="img/pastelCajeta.jpg"></th>
+						</tr>
+						<tr>
+							<th>PASTEL DE ZANAHORIA </th>
+							<td>Pastel elaborado con bizcocho de zanahoria, trozos de nuez y pasas, cubierto de betun de queso crema</td>
+							<th>ENTERO $220.00
+								REBANADA $24.00</th>
+							<th><img src="img/pastelZanahoria.jpg"></th>
+						</tr>
+						<tr>
+							<th>PASTEL DE TIRAMISU</th>
+							<td>Pastel elaboraado con mousse de queso, bizcocho de cafe, decorado con trozos de chocolate</td>
+							<th>ENTERO $220.00
+								REBANADA $24.00</th>
+							<th><img src="img/pastelTiramisu.jpg"></th>
+						</tr>
+						<tr>
+							<th>PAN DE ELOTE</th>
+							<td>Pan elaborado con trozo de elote</td>
+							<th>ENTERO $140.00
+								REBANADA $16.00</th>
+							<th><img src="img/panElote.jpg"></th>
+						</tr>
+						<tr>
+							<th>PAN DE NUEZ</th>
+							<td>PAn elaborado con trozos de nuez</td>
+							<th>ENTERO $140.00
+								REBANADA $16.00</th>
+							<th><img src="img/panNuez.jpg"></th>
+						</tr>
+						<tr>
+							<th>CHESSECAKE DE FRESA</th>
+							<td> Cheesecake cubierto de mermeladoa de fresa, decorado con fresas y crema para batir</td>
+							<th>ENTERO $180.00
+								REBANADA $20.00</th>
+							<th><img src="img/chessecakeFresa.jpg"></th>
+						</tr>
+						<tr>
+							<th>CHESSECAKE</th>
+							<td> El tradicional chessecake decorado con frutos (fresas,zarzamora,franbuesa y mora azul)</td>
+							<th>ENTERO $180.00
+								REBANADA $20.00</th>
+							<th><img src="img/chessecake.jpg"></th>
+						</tr>
+						<tr>
+							<th>PAY DE LIMON</th>
+							<td> Pay de limon decorado con rodajas de limon</td>
+							<th>ENTERO $180.00
+								REBANADA $20.00</th>
+							<th><img src="img/payLimon.jpg"></th>
+						</tr>
+					</table>
+					<!-- agregue un dir para que existiera una separacion entre las dos tablas y no se 
+						vea tan junto-->
+					<dir></dir>
+					<!--al terminar con los pasteles cerramos la tabla y volvemos a abrir otra, en donde ahora ponemos como
+						titulo crepas y aperitivos y de igual forma agregamos este tipo de productos en cada una de las filas y en ellas
+						se incluye en nombre del producto, una descripcion, el precio y una imagen ilustrativa del producto-->
+					<table>
+						<caption>CREPAS Y APERITIVOS</caption>
+						<tr>
+							<th>CREPA DE CAJETA (3 piezas)</th>
+							<td>Rellenas de queso crema, bañadas de cajeta, decoradas con trozos de nuez y 
+							acompañadas con una bola de helado sabor vainilla</td>
+							<th>$70.00</th>
+							<th><img src="img/crepasCajeta.jpg"></th>
+						</tr>
+						<tr>
+							<th>CREPA DE CHOCOLATE (3 piezas)</th>
+							<td>Crepas con sabor a chocolate, decoradas con cocholate blanco,rellenas de platano y acompañadas
+							con una bola de helado sabor vainilla</td>
+							<th>$70.00</th>
+							<th><img src="img/crepasChocolate.jpg"></th>
+						</tr>
+						<tr>
+							<th>CREPA DE FRESA (3 piezas)</th>
+							<td>Crepas rellenas de fresas con crema de avellana, decoradas con chocolate y acompañadas
+							de una bola de helado sabor vainilla</td>
+							<th>$70.00</th>
+							<th><img src="img/crepasFresa.jpg"></th>
+						</tr>
+						<tr>
+							<th>CREPA HAWAIANA (3 piezas)</th>
+							<td>Crepas rellenas con queso,jamon y piña, decoradas con queso manchego rayado</td>
+							<th>$70.00</th>
+							<th><img src="img/crepasHawai.jpg"></th>
+						</tr>
+						<tr>
+							<th>CREPA DE CHAMPIÑONES (3 piezas)</th>
+							<td>Crepas rellenas con queso y champiñones, decoradas con queso manchego rayado</td>
+							<th>$70.00</th>
+							<th><img src="img/crepasChampi.jpg"></th>
+						</tr>
+						<tr>
+							<th>BROWNIES (3 piezas)</th>
+							<td>Bizcocho de chocolate con trozos de nuez, rellenos de mantequilla de mani </td>
+							<th>$35.00</th>
+							<th><img src="img/brownie.jpg"></th>
+						</tr>
+						<tr>
+							<th>WAFFLES (3 piezas)</th>
+							<td> Waffles decoratos con frutos rojos (zarzamora y franbuesa) bañados en miel de mapple</td>
+							<th>$40.00</th>
+							<th><img src="img/waffles.jpg"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--con esto se termina todo lo de se tiene en el contenido de la pagina y se empieza a crear el pie de pagina 
+					por lo que se crea un div en donde se tendra todo lo correspondiente a el pie de pagina-->
+			<div id="piePagina">
+				<!--se crea un div contacto en donde se pondra pondra el nombre y tambien se indica que es el contacto-->
+				<div id="contacto">
+					<h4>CONTACTO</h4>
+					<h5>Susana Herandi</h5>
+				</div>
+				<!--se crea un div materia en donde se pone el nombre de la materia asi como el grupo y tambien 
+					se indica que es la materia-->
+				<div id="materia">
+					<h4>MATERIA</h4>
+					<h5>Programacion Web 1507 </h5>
+				</div>
+				<!--se crea un div telefono en donde se pone el telefono del restaurante y se indica que es el 
+					telefono-->
+				<div id="telefono">
+					<h4>TELEFONO</h4>
+					<h5>537768254</h5>
+				</div>
+				<!--se crea un div redes en donde se pondran los logos de las redes y se indica que si se apreta
+				ya sea en el div de instagram o en el div de facebook te redirecciona al enlace de cada uno de ellos-->
+				<div id="redes">
+					<a href="https://www.instagram.com/">
+						<div id="instagram"><img src="img/instagram.png"></div>
+					</a>
+					<a href="https://es-la.facebook.com/">
+						<div id="facebook"><img src="img/facebook.png"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

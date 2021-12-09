@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--aqui se le asigna el el titulo de la pagina sera coffe & cake -->
+		<title>COFFE & CAKE</title>
+		<!--es esta parte se le indica el "estilo" de la pagina lo tomara del archivo css estilos -->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<!-- se crea un div llamado contenedor en cual sera en donde se agregue todos los componentes que se 
+		pondran en la pagina -->
+		<div id="contenedor">	
+			<!--en el div encabezado se tendran todos los componentes que se utilicen para el encabezado
+				de la pagina-->
+			<div id="encabezado">
+				<!--en el div logo se pondra el logo del restaurante, el el div titulo el nombre del restaurante
+					y en el div menu el menu para poder navegar entre las diferentes paginas-->
+				<div id="logo"></div>
+				<div id="titulo"><h1>COFFE & CAKE</h1></div>
+				<div id="menu">
+					<!-- para el menu se utiliza una lista a la cual llamaremos horizontal en donde ponemos
+						cada pagina se tiene (inicio,menu,galeria y combos, para que no salgan subrayados
+						las letras se le declara que el texto no tenga ninguna decoracion y se le asigna una referencia
+						para que cada que apretes el nombre te lleve o te redireccione a esa pagina-->
+					<ul id="horizontal">
+    					<li><a id="h2" href="Inicio.html"style="text-decoration: none;">INICIO</a></li>
+   						<li><a id="h2" href="Menu.html"style="text-decoration: none;">MENU</a></li>
+    					<li><a id="h2" href="Galeria.html" style="text-decoration: none;">GALERIA</a></li>
+    					<li><a id="h2" href="Promociones.html" style="text-decoration: none;">COMBOS</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--con esto terminamos la parte del encabezado y empezamos a crear el contenido de la pagina-->
+
+			<!-- para nuestro contenido vamos a crear un div llamado contenido en donde pondremos todos los 
+			componentes que pertenezcan al contenido-->
+			<div id= "contenido">
+				<!--para el titulo del contenido creamos un div y escribimos en nombre de la pagina, en este caso son
+					los combos-->
+				<div id="contenedorTitulo">
+					<h3>COMBOS</h3>
+				</div>
+				<!--se crea un div para poner todo el contenido sobre los combos-->
+				<div id="promociones">
+					<!-- se crean varias tablas dependiendo del tipo de producto que es -->
+					<table> 
+						<!-- se pone como titulo de la tabla combos individuales y se agregan en cada una de las filas los productos 
+							que pertencen a los combos individuales, en cada columna se tendra el nombre del combo, lo que incluye
+							el precio del mismo y una imagen ilustrativa del producto-->
+						<caption>COMBOS INDIVIDUALES</caption>
+						<tr>
+							<th>COMBO INDIVIDUAL 1</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros pasteles con una bebida caliente
+							(Café,Capuchino,Chai,Chocolate)</td>
+							<th>$50.00</th>
+							<th><img src="img/pastInd.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 2</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros pasteles con una bebida fria
+							(Frappe,Malteada de fresa,Vainilla o Chocolate)</td>
+							<th>$70.00</th>
+							<th><img src="img/pastInd2.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 3</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros chessecake o pay de limon con una bebida caliente
+							(Café,Capuchino,Chai,Chocolate)</td>
+							<th>$45.00</th>
+							<th><img src="img/chesseInd.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 4</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros chessecake o pay de limon con una bebida fria
+							(Frappe,Malteada de fresa,Vainilla o Chocolate)</td>
+							<th>$65.00</th>
+							<th><img src="img/chesseInd2.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 5</th>
+							<td>INCLUYE:<br>Una orden de cualquiera de nuestras crepas con una bebida caliente
+							(Café,Capuchino,Chai,Chocolate)</td>
+							<th>$90.00</th>
+							<th><img src="img/crepInd.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 6</th>
+							<td>INCLUYE:<br>Una orden de cualquiera de nuestras crepas con una bebida fria
+							(Frappe,Malteada de fresa,Vainilla o Chocolate)</td>
+							<th>$110.00</th>
+							<th><img src="img/crepInd2.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 7</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros panes con una bebida caliente
+							(Café,Capuchino,Chai,Chocolate)</td>
+							<th>$40.00</th>
+							<th><img src="img/panInd.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO INDIVIDUAL 8</th>
+							<td>INCLUYE:<br>Una rebanada de cualquiera de nuestros panes con una bebida fria
+							(Frappe,Malteada de fresa,Vainilla o Chocolate)</td>
+							<th>$60.00</th>
+							<th><img src="img/panInd2.jpg"></th>
+						</tr>
+					</table>
+					<!-- agregue un dir para que existiera una separacion entre las dos tablas y no se 
+						vea tan junto-->
+					<dir></dir>
+					<!--al terminar con los combos individuales cerramos la tabla y volvemos a abrir otra, en donde ahora ponemos como
+						titulo combos familiares y de igual forma agregamos este tipo de combos en cada una de las filas y en ellas
+						se incluye en nombre del combo, lo que incluye el combo el precio y una imagen ilustrativa del producto-->
+					<table>
+						<caption>COMBOS FAMILIARES</caption>
+						<tr>
+							<th>COMBO FAMILIAR 1</th>
+							<td>INCLUYE:<br>Cualquiera de nuestros pasteles con 5 bebidas a su eleccion</td>
+							<th>$360.00</th>
+							<th><img src="img/pastFam.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO FAMILIAR 2</th>
+							<td>INCLUYE:<br>Cualquiera de nuestros cheesecake o pay de limon con 5 bebidas a su eleccion</td>
+							<th>$320.00</th>
+							<th><img src="img/chesseFam.jpg"></th>
+						</tr>
+						<tr>
+							<th>COMBO FAMILIAR 3</th>
+							<td>DINCLUYE:<br>Cualquiera de nuestros panes con 5 bebidas a su eleccion</td>
+							<th>$280.00</th>
+							<th><img src="img/panFam.jpg"></th>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--con esto se termina todo lo de se tiene en el contenido de la pagina y se empieza a crear el pie de pagina 
+					por lo que se crea un div en donde se tendra todo lo correspondiente a el pie de pagina-->
+			<div id="piePagina">
+				<!--se crea un div contacto en donde se pondra pondra el nombre y tambien se indica que es el contacto-->
+				<div id="contacto">
+					<h4>CONTACTO</h4>
+					<h5>Susana Herandi</h5>
+				</div>
+				<!--se crea un div materia en donde se pone el nombre de la materia asi como el grupo y tambien 
+					se indica que es la materia-->
+				<div id="materia">
+					<h4>MATERIA</h4>
+					<h5>Programacion Web 1507 </h5>
+				</div>
+				<!--se crea un div telefono en donde se pone el telefono del restaurante y se indica que es el 
+					telefono-->
+				<div id="telefono">
+					<h4>TELEFONO</h4>
+					<h5>537768254</h5>
+				</div>
+				<!--se crea un div redes en donde se pondran los logos de las redes y se indica que si se apreta
+				ya sea en el div de instagram o en el div de facebook te redirecciona al enlace de cada uno de ellos-->
+				<div id="redes">
+					<a href="https://www.instagram.com/">
+						<div id="instagram"><img src="img/instagram.png"></div>
+					</a>
+					<a href="https://es-la.facebook.com/">
+						<div id="facebook"><img src="img/facebook.png"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

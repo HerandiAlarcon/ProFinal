@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--aqui se le asigna el el titulo de la pagina sera coffe & cake -->
+		<title>COFFE & CAKE</title>
+		<!--es esta parte se le indica el "estilo" de la pagina lo tomara del archivo css estilos -->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+	</head>
+	<body>
+		<!-- se crea un div llamado contenedor en cual sera en donde se agregue todos los componentes que se 
+		pondran en la pagina -->
+		<div id="contenedor">	
+			<!--en el div encabezado se tendran todos los componentes que se utilicen para el encabezado
+				de la pagina-->
+			<div id="encabezado">
+				<!--en el div logo se pondra el logo del restaurante, el el div titulo el nombre del restaurante
+					y en el div menu el menu para poder navegar entre las diferentes paginas-->
+				<div id="logo"></div>
+				<div id="titulo"><h1>COFFE & CAKE</h1></div>
+				<div id="menu">
+					<!-- para el menu se utiliza una lista a la cual llamaremos horizontal en donde ponemos
+						cada pagina se tiene (inicio,menu,galeria y combos, para que no salgan subrayados
+						las letras se le declara que el texto no tenga ninguna decoracion y se le asigna una referencia
+						para que cada que apretes el nombre te lleve o te redireccione a esa pagina-->
+					<ul id="horizontal">
+    					<li><a id="h2" href="Inicio.html"style="text-decoration: none;">INICIO</a></li>
+   						<li><a id="h2" href="Menu.html"style="text-decoration: none;">MENU</a></li>
+    					<li><a id="h2" href="Galeria.html" style="text-decoration: none;">GALERIA</a></li>
+    					<li><a id="h2" href="Promociones.html" style="text-decoration: none;">COMBOS</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--con esto terminamos la parte del encabezado y empezamos a crear el contenido de la pagina-->
+
+			<!-- para nuestro contenido vamos a crear un div llamado contenido en donde pondremos todos los 
+			componentes que pertenezcan al contenido-->
+			<div id= "contenido">
+				<!--para el titulo del contenido creamos un div y escribimos en nombre de la pagina, en este caso es 
+					la galeria-->
+				<div id="contenedorTitulo">
+					<h3>GALERIA</h3>
+				</div>
+
+				<div id="galeria">
+					<h4>VISITA NUESTRO RESTAURANTE</h4>
+					<!-- -->
+					<div id="imagenes">
+						<img id="galeria" src="img/rest3.jpg">	
+						<img id="galeria" src="img/rest4.jpg">	
+						<img id="galeria" src="img/rest5.jpg">	
+					</div>
+					<h4>CONOCE NUESTROS POSTRES</h4>
+					<div id="imagenes">
+						<img id="galeria" src="img/postre1.jpg">	
+						<img id="galeria" src="img/postre2.jpg">	
+						<img id="galeria" src="img/postre3.jpg">	
+						<img id="galeria" src="img/postre4.jpg">
+						<img id="galeria" src="img/postre5.jpg">
+						<img id="galeria" src="img/postre6.jpg">
+					</div>
+					<h4>CUPONES</h4>
+					<div id="imagenes">
+						<img src="img/cupon.jpg">	
+					</div>
+				</div>
+			</div>
+			<!--con esto se termina todo lo de se tiene en el contenido de la pagina y se empieza a crear el pie de pagina 
+					por lo que se crea un div en donde se tendra todo lo correspondiente a el pie de pagina-->
+			<div id="piePagina">
+				<!--se crea un div contacto en donde se pondra pondra el nombre y tambien se indica que es el contacto-->
+				<div id="contacto">
+					<h4>CONTACTO</h4>
+					<h5>Susana Herandi</h5>
+				</div>
+				<!--se crea un div materia en donde se pone el nombre de la materia asi como el grupo y tambien 
+					se indica que es la materia-->
+				<div id="materia">
+					<h4>MATERIA</h4>
+					<h5>Programacion Web 1507 </h5>
+				</div>
+				<!--se crea un div telefono en donde se pone el telefono del restaurante y se indica que es el 
+					telefono-->
+				<div id="telefono">
+					<h4>TELEFONO</h4>
+					<h5>537768254</h5>
+				</div>
+				<!--se crea un div redes en donde se pondran los logos de las redes y se indica que si se apreta
+				ya sea en el div de instagram o en el div de facebook te redirecciona al enlace de cada uno de ellos-->
+				<div id="redes">
+					<a href="https://www.instagram.com/">
+						<div id="instagram"><img src="img/instagram.png"></div>
+					</a>
+					<a href="https://es-la.facebook.com/">
+						<div id="facebook"><img src="img/facebook.png"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

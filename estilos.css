@@ -1,0 +1,408 @@
+/*al contenedor le asignamos el color whitesmoke asi como el ancho de 1280px 
+y el alto lo ponemos en auto ya que depende de cada pagina*/
+div#contenedor{
+	background-color: whitesmoke;
+	width: 1280px;
+	height: auto;
+}
+/* en el encabezado le asigno el color #FF0E6E6 le asignamos el ancho de manera automatica 
+por lo que tendra el mismo ancho que el contenedor y el alto le ponemos 100px, le agregamos un margen interno
+de 25px de alto y 60px de ancho y el display en flex para poder tener nuestro componentes de manera "horizontal" */
+div#encabezado{
+	background-color: #F0E6E6;
+	width: auto;
+	height: 100px;
+	padding: 25px 60px;
+	display: flex;
+}
+/* para el logo le asignamos un alto de 100px y un ancho de 100px y para poder lograr que nuestro logo se vea de manera circular
+agregamos la imagen en el fondo de div y por ultimos indicamos cuanta curvatura es la que vamos a querer que en este caso fueron 50px */
+div#logo{
+	background-image: url(img/logo.jpg);
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;  	
+	-webkit-border-radius: 50px;
+}
+/* es este div vamos a meter solo el titulo o bueno el nombre del restaurnte en donde como fondo le asignamos un margen 
+del lado izquierdo del div para que no se vea tan pegado al logo y le asignamos los valores de 150px de 
+ancho y 100px de alto, la forma en la que me gusto como se veia el logo fue indicandole que el display sea flex asi 
+continua hasta que se ya no queda en el ancho del div*/
+div#titulo{
+	margin-left: 30px;
+	width: 150px;
+	height: 100px;
+	display: flex;
+}
+/* para el menu se asignamos un alto de ancho de 800px y un alto de 50px 
+para que no se encuentre tan pegado a nuestro nombre del restaurante le ponemos un margen del lado izquierdo de 80px y 
+para que se encuentre un poco mas abajo que los demas componentes un margen interno superior de 30px, tambien alineamos 
+todos los componentes que tenga al centro he indicamos que el display sea flex*/
+div#menu{
+	width: 800px;
+	height: 50px;
+	margin-left: 80px;
+	padding-top: 30px;
+	align-items: center;
+	display: flex;
+}
+/* para nuestro menu al ser una lista le asignamos que sea por bloques y que la lista se vaya hacia la izquierda,
+con esto vamos a poder ver a nuestro menu (lista) de manera horizontal. indicamos un margen interno de 8px por 35 px
+el tamaño de la letra lo ponemos en 25px, y el tipo de letra Helvetica, para que se pudiera ver la division entre los
+indices le agregamos border en los laterales de 1px de grosor y color A99EA0*/
+ul#horizontal li{
+display:block;
+float: left;
+padding:8px 35px;
+font-size: 25px;
+font-family: Helvetica;
+border-right: 1px solid #A99EA0;
+border-left: 1px solid #A99EA0;
+}
+/*con esto terminamos todo lo de nuestro encabezado*/
+
+
+
+
+/* para el contenido de la pagina creamos un div en donde el tamaño este
+se dara de manera automatica esto por que el ancho ser el mismo que el del contenedor y nuestro alto varia dependiendo
+de la pagina (menu,inicio,galeria o promociones) y los componenetes que utilicemos en ella */
+div#contenido{
+	width: auto;
+	height: auto;
+}
+/* en este div vamos a poner el titulo de cada pagina el cual nos indicara en que pagina estamos situados, como
+en todos los demas el ancho sera automatico y nuestro alto sera de 70px, agregamos un margen interno de 10px  de alto 
+por 150px de ancho y para que nuestro titulo no se vea demasiado abajo de nuestro emcabezado indicamos el display flex
+y los componentes alineados al centro*/
+div#contenedorTitulo{
+	width: auto;
+	height: 70px;
+	padding: 10px 150px;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+/* en esta parte empezamos a crear de manera individual cada una de las paginas, para la de inicio creamos un div  en donde
+el ancho y alto sera manera automatica le agragamos un margen interno izquierdo de 100px y en la parte inferior de 10px 
+para que no se vea demasiado separado se nuestro titulo vamos a subirlo un poco, es por ello que indicamos un margen superior
+de -30px*/
+div#inicio{
+	width: auto;
+	height: auto;
+	padding-left: 100px;
+	padding-bottom: 10px;
+	margin-top: -30px;
+}
+/*en esta parte empieza el codigo que se genero para poder hacer las imagenes del inicio, este es el 
+recuadro principal en donde estaran todos los componentes, el cual tiene un tamaño de 770px por 552px 
+tendra un color gris claro, y asiganmos que cualquier cosa que se encuentre del div y sobresalga de 
+este lo tiene que ocultar. Esto no sirve para que no se vean las demas imagenes */
+.slidershow{
+	width: 770px;
+	height: 552px;
+	overflow: hidden;
+	background-color: lightgray;
+}
+/*para la posicion de div slidershow se utizo una posisicion absoluta en donde se indico donde se queria poner
+en este caso es de la parte superior a 295px y del lado izquierdo a 80px*/
+.middle{
+	position: absolute;
+	top: 295px;
+	left: 80px;
+}
+/*para el navegador que se utiliza para cambiar de imagen se utilzo una posicion absoluta, por lo que indicamos
+que fue desde la izquierda a 330px y desde la parte inferior del div slidershow a 20px tambien para poder poner 
+los componentes que tendra este div se puso que el display fue flex*/
+div#navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 330px;
+	display: flex;
+}
+/*para nuestros recuadros en donde podras indicar que imagen quieres ver, se hicieron div en donde su medida es de 20px por 5px
+y un borde negro de 1px de ancho, entre cada uno de ellos se tiene una separacion de 6px y se le indica que cada que pase encima 
+de algun recuadro el cursor cambiara de forma a un puntero (o na manita apuntando)*/
+.bar{
+	width: 20px;
+	height: 5px;
+	border: 1px solid black;
+	margin:  6px;
+	cursor: pointer;
+}
+/* cuando pasar por encima de alguno de estos div el color de este pasara a ser negro */
+.bar:hover{
+	background: black;
+}
+ /* ya que se esta utilizando un input que tiene de valor radio, nos aparece unos circulos en donde nos
+ indica la opcion que escogemos, como no se quiere de aparezca esto es por eso que lo ocultamos y para que no nos
+ afecte en que posicion se encuentra le ponemos una posicion absoluta*/
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+/*este es el div en donde se encuentran las imagenes y se le pone un tamaño de 500% para asegurarnos que solo 
+se vea una imagen, es este caso para poner las imagenes de manera consecutiva se le asigna el display flex*/
+div #slides{
+	width: 500%;
+	display: flex;
+}
+/*cada imagen se encontrara cada 20% del tamaño de div que los contiene y su transicion (o el tiempo que tarde
+de pasar de una imagen a otra) sera de 1 segundo */
+.img{
+	width: 20%;
+	transition: 1s;
+}
+/*por ultimo asignamos para que nos vaya presentando cada una de las imagenes y dependiendo de la imagen que quieras
+ver o bueno en el navegador dependiendo del recuadro que hagan click sera el como se nueva, para cada imagen se moveran 
+hacia la izquierda de 20% ya que esta es la posicion que tienen las imagenes, es por ello que va de 0, -20,-40 y -60*/
+#r1:checked ~ .s1{
+	margin-left: 0;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1{
+	margin-left: -60%;
+}
+img#inicio{
+	width: 750px;
+	height: 490px;
+	margin: 10px 10px;
+}
+/*este div sera nuestro recuadro del lado derecho de nuestra pagina de inicio, por lo que le asignamos
+en ancho 300px, de alto 542px un margen interior de 5px por 10px y para poder tenerlo del lado derecho le agregamos
+un margen izquierdo de 800px y el color de fondo a gris claro*/
+div#ini1{
+	width: 300px;
+	height: 542px;
+	padding: 5px 10px;
+	margin-left: 800px;
+	background-color: lightgray;
+}
+/*este recuadro sera el que se encuentra en a parte de abajo de la pagina de inicio, le 
+asignamos al ancho 1047px con esto el recuadro deja el mismo margen de los dos lados que los recuadros de arriba
+un alto de 115px un margen superior de 20px para que no se encuentre tan pegado a los div de arriba y como el
+div inicio tiene un margen interior y se quiere que el recuadro coinsida con los de arriba, le agregamos un margen 
+izquierdo de -27px y un margen interno superior de 1px e izquierdo de 100px*/
+div#ini2{
+	background-color: lightgray;
+	width: 1047px;
+	height: 115px;
+	margin-top: 20px;
+	margin-left: -27px;
+	padding-top: 1px;
+	padding-left: 100px;
+}
+/*en este recuadro se pondra el horario del restaurante por ello el tamaño de alto y ancho depende de el texto que se escriba
+tendra un margen superior de -115ppx para que este dentro del ini2 y hacia la izquierda de 350px, un margen interno de 1px e
+izquierdo de 30px*/
+div#horario{
+	width: auto;
+	height: auto;
+	margin-top: -115px;
+	margin-left: 350px;
+	padding-top: 1px;
+	padding-left: 30px;
+}
+
+
+
+
+
+/*ahora seguimos con la pagina del menu, por lo que creamos un div en donde el ancho y alto se daran de forma automatixa
+esto ya que el ancho sera el mismo que el del contenedor y el alto dependera del contenido que se ponga, */
+div#productos{
+	width: auto;
+	height: auto;
+}
+/*al ser nuestro menu una tabla en el th le agregamos un margen interno de 30px por 100px,
+esto para que en cada celda el texto tenga ese margen y tambienpor que con ese margen el contenido de las 
+celdas no se ve tan junto, se le asigna el tipo de letra helvetica y el tamaño que sera de 18px y un espacio entre letas de 1px */
+th{
+	padding: 30px 100px;
+	color: gray;
+	font-family: Helvetica;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-align: left;
+}
+/*para la descripcion de los productos al ser mucho texto preferi cambiarlo por td en donde la letra no sale en negritas
+y asi tambien hago la letra un poco mas pequeña*/
+td{
+	color: gray;
+	font-family: Helvetica;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+/* para que al pasar el mousse por un producto y este se vea de un color distinto le agregamos un hover
+a toda la fila en donde le cambiamos el color a un gris claro */
+tr:hover{
+	background-color: lightgrey;
+}
+/* para el titulo de la tabla lo alineamos a la parte izquierda, le agregamos un margen izquierdo de 80px
+le cambiamos el tipo de letra a Helvetica, su tamaño sera de 28px y el color de la letra sera gris*/
+caption{
+	text-align: left;
+	margin-left: 80px;
+	font-family: Helvetica;
+	font-size: 28px;
+	color: gray;
+}
+
+
+
+
+/*al terminar con nuestro menu pasamos a la pagina de galeria en donde igual que los anteirores creamos un div en 
+donde sus medidas seran de manera automatica y el margen interno o el espacio que tendran los componentes que se 
+encuentre dentro de este div tendran 20px por 40px, ya que se veia muy separado los componentes con el titulo
+se le asigno un margen superior de -50px*/
+div#galeria{
+	width: auto;
+	height: auto;
+	padding: 20px 40px;
+	margin-top: -50px;
+}
+/*en esta parte se pondra cada seccion de la galeria, por lo que tendra un ancho de 1160px y un alto auto para que dependa del
+tamaño que tengan las imagenes y estas no sobresalgan del div y entre cada div tendra un margen de 10px por 10px */
+div#imagenes{
+	width: 1240px;
+	height: auto;
+	margin: 10px 10px;
+}
+/*para las imagenes que se encuentran en la galeria se quiso ajustar a que tuvieran el mismo tamaño 
+por lo que el tamaño es de 400px por 300px y un margen derecho de 40px e inferior de 30px*/
+img#galeria{
+	width: 350px;
+	height: 250px;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*para la pagina de promociones vamos a indicar que nuestro alto y ancho seran auto, ya que depende de los componentes
+que se pongan, y en esta pagina de promociones se utilizaron los mismo componentes de la tabla que se utilizaron en el menu
+es por ello que es el unico div que se tiene de promociones*/
+div#promociones{
+	width: auto;
+	height: auto;
+}
+
+
+
+
+/*para el pie de pagina se utiza el color E4DADA y el ancho del div de manera auto, nuestro lato sera de 120px y tendremos
+espacio entre los componenetes que se pongan en el de 10px por 150px, nuestro display sera felx, para que se los componentes
+se puedan acomodar de manera horizontal y para que no se vea tan pegado al contenido de cada una de las paginas se agrego 
+un margen superior de 10px*/
+div#piePagina{
+	background-color:#E4DADA;
+	width: auto;
+	height: 120px;
+	padding: 10px 150px;
+	display: flex;
+	margin-top: 10px;
+}
+/*para la parte donde tiene el contacto el cual es mi nombre se especifico solo el tamaño que se queria
+del div el cual es de 250px por 100px esto para que me vea mas separado de los otros componentes*/
+div#contacto{
+	width: 250px;
+	height: 100px;
+}
+/* de igual forma en la "columna" donde se ve que dice materia y el nombre de la materia se especifico
+solo el tamaño para que se vea un poco mas separado, el cual es de ancho 300px y alto 100px*/
+div#materia{
+	width: 300px;
+	height: 100px;
+}
+/*para la zona donde se tiene el telfono las medidas son de 150px de ancho por 100px de alto, en general el alto
+de los tres div donde se tiene escrito algo el alto mide exactamente igual */
+div#telefono{
+	width: 150px;
+	height: 100px;
+}
+/* en la parte de redes que se encuentra en el pie de pagina se le asigno un tamaño de 150px por 30px y para 
+que nuestros dos div que tendra este se le asigna que el display sera flex y el espacio entre ellos sera de 40px por 50px
+le asignamos un margen izquierdo de 40px para que se vea separado del telefono y un margen superior de 10px para que se
+un poco mas centrado el contenido de este div */
+div#redes{
+	width: 150px;
+	height: 30px;
+	display: flex;
+	padding: 40px 50px;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+/*en este div se pondra el logo de instragram por lo que el div tendra las mismas medidas 
+que la imagen las cuales son de 50px por 50px*/
+div#instagram{
+	width: 50px;
+	height: 50px;
+}
+/* y asi como  el anterior en este se pondra el logo de facebook y tendra las mismas 
+medidas que la imagen las cuales son de 50px por 50px la unica diferencia es que se le agrega un margen 
+izquierdo para que no se vean tan juntos los logos*/
+div#facebook{
+	width: 50px;
+	height: 50px;
+	margin-left: 30px;
+}
+
+
+/*En esta parte empezara la configuracion del texto que se utilizo en la pagina*/
+
+/*h1 sera la letra de nuestro titulo por lo que el tamaño de la letra es de 27pxel tipo de letra sera Helvetica
+y el color de la letra sera Darkslategrey*/
+h1{
+font-size: 27px;
+font-family: Helvetica;
+color: darkslategrey;
+}	
+/*es este caso para la letra al no poder indicar el color cuando hicimos el menu lo haremos aparte,
+por lo que el color que queremos para la letra sera gray*/
+a#h2{
+color: gray;
+}
+/*y al momento de pasar el mpuse encima de la palabra ( inicio,menu.,galeria o combos) el color
+de la letra va a cambiar a negro*/
+a#h2:hover{
+color: black;
+}
+/*esta letra es la que se utiliza para el titulo de cada una de las paginas en donde el tamaño de la 
+letra es de 45px el color es gris, el tipo de letra es Helvetica y para que la letra no se vea tan junta
+se agregue un espacio entre letras de 5px*/
+h3{
+	font-size: 45px;
+	color: grey;
+	font-family: Helvetica;
+	letter-spacing: 5px;
+}
+/*esta letra es la que se utiliza para los subtitulos o bien los titulos en el pie de pagina y para la pagina principal, el tamaño de 
+la letra es de 20px, el tipo de letra es Helvetica y el color es #3E4F6A*/
+h4{
+	font-size: 20px;
+	color: #3E4F6A;
+	font-family: Helvetica;
+}
+/*esta letra se utiliza para el pie de pagina en donde viene el nombre, el nombre de la materia y el telefono, tambien se
+utiliza para la pagina principal en donde se tiene la informacion el tamaño de la letra es de 15px 
+de igual forma es el tipo de letra Helvetica y el color es #474A50 */
+h5{
+	font-size: 15px;
+	color: #474A50;
+	font-family: Helvetica;
+}
+
+
+
+
